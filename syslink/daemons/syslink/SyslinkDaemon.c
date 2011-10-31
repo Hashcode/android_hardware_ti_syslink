@@ -70,8 +70,6 @@
 /* Sample headers */
 #include <CrashInfo.h>
 
-#include <syslink_ipc_listener.h>
-
 #ifdef HAVE_ANDROID_OS
 #undef LOG_TAG
 #define LOG_TAG "SYSLINKD"
@@ -938,7 +936,7 @@ Int main (Int argc, Char * argv [])
     }
 
     // Start listner that will listen for incoming messages
-    startSyslinkListenerThread();
+    // startSyslinkListenerThread();
 
     /* Process will be daemonised if daemon flag is true */
     if (daemon) {
