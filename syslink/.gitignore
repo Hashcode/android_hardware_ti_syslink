@@ -1,0 +1,16 @@
+aclocal.m4
+autom4te.cache
+Makefile.in
+Makefile
+.deps
+.libs
+*.o
+*.lo
+*.la
+libtool
+*.pc
+config.h.in
+config
+configure
+
+build
