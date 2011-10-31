@@ -13,7 +13,7 @@ LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/../../api/include \
 	$(LOCAL_PATH)/../../api/include/ti/ipc \
 	$(LOCAL_PATH)/../inc \
-	hardware/ti/omap4/tiler
+	hardware/ti/tiler
 
 LOCAL_SHARED_LIBRARIES := \
 	libipcutils \
@@ -28,5 +28,6 @@ LOCAL_CFLAGS += -MD -pipe  -fomit-frame-pointer -Wall  -Wno-trigraphs -Werror-im
 #LOCAL_CFLAGS += -DSYSLINK_USE_DAEMON
 
 LOCAL_MODULE:= memmgrserver.out
+LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_EXECUTABLE)

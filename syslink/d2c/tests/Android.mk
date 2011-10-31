@@ -10,7 +10,7 @@ LOCAL_SRC_FILES:= \
 	testlib.c
 
 LOCAL_C_INCLUDES += \
-	hardware/ti/omap4/tiler \
+	hardware/ti/tiler \
 	$(LOCAL_PATH)/..
 
 LOCAL_SHARED_LIBRARIES := \
@@ -20,5 +20,6 @@ LOCAL_SHARED_LIBRARIES := \
 LOCAL_CFLAGS += -MD -pipe  -fomit-frame-pointer -Wall  -Wno-trigraphs -Werror-implicit-function-declaration  -fno-strict-aliasing -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -msoft-float -Uarm -DMODULE -D__LINUX_ARM_ARCH__=7  -fno-common -DLINUX -DTMS32060 -D_DB_TIOMAP  -DSYSLINK_USE_SYSMGR -DSYSLINK_USE_LOADER
 
 LOCAL_MODULE:= d2c_test
+LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_EXECUTABLE)
